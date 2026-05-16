@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"/Users/feiwang/Downloads/claude/AI Pioneer /ai-pioneer/\" log --oneline)",
+      "Read(//Users/feiwang/Downloads/claude/AI Pioneer /ai-pioneer/**)",
+      "Read(//Users/feiwang/Downloads/claude/AI Pioneer /**)",
+      "Bash(ls \"/Users/feiwang/Downloads/claude/\" && ls \"/Users/feiwang/Downloads/claude/AI Pioneer \"  2>/dev/null || ls \"/Users/feiwang/Downloads/claude/AI Pioneer\"  2>/dev/null)",
+      "Read(//Users/feiwang/Downloads/claude/**)",
+      "Bash(npx shadcn@latest init -d)",
+      "Bash(npx shadcn@latest --version)",
+      "Bash(npx shadcn@latest init --help)",
+      "Bash(npx shadcn@latest init --template vite --base radix --preset base-nova --yes)",
+      "Bash(npx shadcn@latest init --template vite --base radix --preset nova --yes)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(mkdir -p \"/Users/feiwang/Downloads/claude/AI Pioneer /ai-pioneer/src/lib\")",
+      "Bash(mkdir -p \"/Users/feiwang/Downloads/claude/AI Pioneer /ai-pioneer/src/components/ui\")",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest add button input progress textarea label sonner --yes)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npx tsc *)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_fill_form",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Read(//private/var/folders/**)",
+      "Bash(xargs ls -t)",
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 show *)",
+      "Bash(pip3 install *)",
+      "Bash(cp /tmp/peter_karsten_nobg.png \"/Users/feiwang/Downloads/claude/AI Pioneer /ai-pioneer/public/peter-karsten.png\" *)",
+      "Bash(git status *)",
+      "Bash(git init *)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp"
+    ]
+  }
+}
