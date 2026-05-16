@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0D0D4B;
+  --color-cyan: #16E9D7;
+  --color-blue: #0047BB;
+  --color-mist: #DAE3ED;
+  --color-ink: #1C1F2A;
+  --color-graphite: #50555B;
+  --color-deep-blue: #001489;
+  --color-sand: #DFC5AE;
+  --color-bronze: #AC7C59;
+  --color-silver: #A0A8AE;
+
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  --shadow-sm: 0 1px 2px rgb(13 13 75 / 0.06);
+  --shadow-md: 0 4px 12px rgb(13 13 75 / 0.10);
+  --shadow-lg: 0 12px 32px rgb(13 13 75 / 0.16);
+}
+
+/* ── Animations ─────────────────────────────────── */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(22,233,215,0.4), 0 0 60px rgba(22,233,215,0.15); }
+  50%       { box-shadow: 0 0 40px rgba(22,233,215,0.7), 0 0 100px rgba(22,233,215,0.3); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Utility classes ────────────────────────────── */
+@layer utilities {
+  .bg-gradient-momentum {
+    background: linear-gradient(135deg, #0D0D4B 0%, #0047BB 50%, #16E9D7 100%);
+  }
+  .bg-gradient-trust {
+    background: linear-gradient(180deg, #0D0D4B 0%, #001489 100%);
+  }
+  .bg-gradient-growth {
+    background: linear-gradient(90deg, #0047BB 0%, #16E9D7 100%);
+  }
+
+  /* Animated hero background */
+  .hero-bg {
+    background: linear-gradient(-45deg, #0D0D4B, #001489, #0047BB, #0a3a8a, #0D0D4B);
+    background-size: 400% 400%;
+    animation: gradient-shift 10s ease infinite;
+  }
+
+  /* Dot grid overlay */
+  .bg-dot-grid {
+    background-image: radial-gradient(rgba(22,233,215,0.12) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+
+  /* Gradient text */
+  .text-gradient-cyan {
+    background: linear-gradient(90deg, #16E9D7, #ffffff, #16E9D7);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+  }
+
+  .text-gradient-static {
+    background: linear-gradient(135deg, #16E9D7 0%, #a8f5ef 50%, #16E9D7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glow effects */
+  .glow-cyan {
+    box-shadow: 0 0 24px rgba(22,233,215,0.5), 0 0 80px rgba(22,233,215,0.2);
+  }
+  .glow-cyan-lg {
+    box-shadow: 0 0 40px rgba(22,233,215,0.6), 0 0 120px rgba(22,233,215,0.25);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 20px rgba(22,233,215,0.6), 0 0 60px rgba(22,233,215,0.3);
+  }
+
+  /* Glass card */
+  .glass-card {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .glass-card-hover {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+  }
+  .glass-card-hover:hover {
+    background: rgba(22,233,215,0.05);
+    border-color: rgba(22,233,215,0.3);
+    box-shadow: 0 0 30px rgba(22,233,215,0.1), 0 8px 32px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Pulsing CTA */
+  .btn-pulse {
+    animation: pulse-glow 2.5s ease-in-out infinite;
+  }
+
+  /* Float animation */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .timeline-card {
+    margin-left: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    .timeline-card {
+      margin-left: 0;
+    }
+
+    .timeline-card-left {
+      margin-right: calc(50% + 3rem);
+    }
+
+    .timeline-card-right {
+      margin-left: calc(50% + 3rem);
+    }
+  }
+}
+
+/* ── Base ────────────────────────────────────────── */
+html {
+  font-family: var(--font-sans);
+  background-color: #0D0D4B;
+  color: #FFFFFF;
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(22,233,215,0.3), transparent);
+}
