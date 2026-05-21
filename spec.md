@@ -80,7 +80,198 @@
 
 ---
 
-## 3. 问卷设计（30 题）
+## 3. 页面线框图（ASCII Wireframes）
+
+### 3.1 整体页面结构
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        [LOGO]                               │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.1  HERO                                                │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.2  WHO WE'RE LOOKING FOR (Pillars)                     │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.3  WHAT SELECTED PARTICIPANTS GET (Offer)              │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.4  THE PIONEER JOURNEY (7-Step Timeline)               │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.5  JUDGING PANEL                                       │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.6  AI LEADERSHIP AWARDS                                │
+├─────────────────────────────────────────────────────────────┤
+│  § 2.7  APPLICATION FORM                                    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.2 Hero 区块
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│            STARTRADER AI Pioneer Program                    │
+│                                                             │
+│       Learn Faster. Think Bigger. Build Smarter.            │
+│                                                             │
+│   A 2-month enterprise AI sandbox for STARTRADER's          │
+│   most curious minds — top performers earn the              │
+│   AI Leadership Award.                                      │
+│                                                             │
+│                 ┌────────────────────┐                      │
+│                 │  Apply to Program  │                      │
+│                 └────────────────────┘                      │
+│                                                             │
+│  ┌───────────────┐  ┌───────────────┐  ┌───────────────┐   │
+│  │     2 mo      │  │      30       │  │       1       │   │
+│  │  Enterprise   │  │  Assessment   │  │  AI Leadership│   │
+│  │   AI Access   │  │   Questions   │  │     Award     │   │
+│  └───────────────┘  └───────────────┘  └───────────────┘   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.3 Who We're Looking For（Pillars）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  Who We're Looking For                      │
+│                                                             │
+│  ┌───────────┐  ┌───────────┐  ┌───────────┐               │
+│  │   [ico]   │  │   [ico]   │  │   [ico]   │               │
+│  │ Curiosity │  │  Strong   │  │Innovation │               │
+│  │ about AI  │  │ Learning  │  │ Mindset   │               │
+│  │           │  │Motivation │  │           │               │
+│  └───────────┘  └───────────┘  └───────────┘               │
+│                                                             │
+│          ┌───────────┐  ┌───────────┐                      │
+│          │   [ico]   │  │   [ico]   │                      │
+│          │Willingness│  │Transform. │                      │
+│          │to Explore │  │ Potential │                      │
+│          └───────────┘  └───────────┘                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.4 What Selected Participants Get（Offer）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              What Selected Participants Get                 │
+│                                                             │
+│   ✓  Company-sponsored AI model accounts                    │
+│                                                             │
+│   ✓  Access to advanced AI tools                            │
+│                                                             │
+│   ✓  Internal AI training resources                         │
+│                                                             │
+│   ✓  Opportunities to join future AI projects               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.5 The Pioneer Journey（7 步时间线）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   The Pioneer Journey                       │
+│                                                             │
+│   ①──────②──────③──────④──────⑤──────⑥──────⑦             │
+│   │      │      │      │      │      │      │              │
+│  App &  Sel.   AI    2-Mo   Use   Champ.  Adv.             │
+│  Assess Cand. Access Expl.  Case  Select  AI Proj.         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.6 Judging Panel（评审团）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      Judging Panel                          │
+│                                                             │
+│  ┌───────────────────────┐  ┌───────────────────────────┐   │
+│  │       [ Peter ]       │  │    Evaluation Criteria    │   │
+│  │    Head of Jury       │  │                           │   │
+│  │                       │  │  Learning Initiative  30% │   │
+│  │  + STARTRADER AI      │  │  AI Understanding     20% │   │
+│  │    Expert Team        │  │  Business Application 30% │   │
+│  └───────────────────────┘  │  Collaboration        20% │   │
+│                             └───────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.7 AI Leadership Awards（奖项）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  AI Leadership Awards                       │
+│                                                             │
+│   ★  Selected as STARTRADER's first AI Champions            │
+│                                                             │
+│   ★  Join advanced internal AI projects                     │
+│                                                             │
+│   ★  Shape the company's AI-first culture                   │
+│                                                             │
+│                 ┌────────────────────┐                      │
+│                 │  Apply to Program  │                      │
+│                 └────────────────────┘                      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3.8 Application Form（报名 + 问卷）
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  [████████████████████████████░░░░░░░░░░]  Progress: 72%   │
+├─────────────────────────────────────────────────────────────┤
+│                        Apply Now                            │
+│                                                             │
+│  Full Name     [ _______________________________ ]          │
+│  Phone         [ _______________________________ ]          │
+│  Company Email [ _______________________________ ]          │
+│                                                             │
+│  ── SECTION 1  AI Fundamentals  (Q1–Q10) ──────────────── │
+│                                                             │
+│  Q1. What best describes a large language model?            │
+│      ○  A.  A relational database                           │
+│      ○  B.  An AI trained on large text corpora             │
+│      ○  C.  A cloud storage service                         │
+│      ○  D.  A scripting language                            │
+│                                                             │
+│  ── SECTION 3  Open Questions  (Q22, 25, 27, 30) ─────── │
+│                                                             │
+│  Q22. What area of your work would you most like           │
+│       AI to improve?                                        │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │                                                     │   │
+│  │                                       0 / 2000 chr  │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│              ┌──────────────────────────────┐              │
+│              │      Submit Application      │              │
+│              └──────────────────────────────┘              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4. 问卷设计（30 题）
 
 问卷分为 **3 个 Section**，总计 30 题，预计耗时 30–40 分钟：
 
@@ -180,9 +371,11 @@ CREATE TABLE public.applications (
 
 ```
 /                    → 首页（Landing Page + Application Form）
+/admin/login         → 管理员登录（未登录可访问）
+/admin               → 管理后台（需登录，展示申请列表 + CSV 导出）
 ```
 
-项目为单页应用，所有内容集中在 `/` 路由。
+管理后台使用 TanStack Start 加密 Session Cookie（`SESSION_SECRET`），凭据通过环境变量 `ADMIN_EMAIL` / `ADMIN_PASSWORD` 配置。MVP 阶段申请数据存于服务端内存；接入 Supabase 后可切换为数据库持久化。
 
 ---
 
@@ -231,8 +424,8 @@ Twitter:     summary card
 
 ## 10. 后续扩展建议
 
-1. **管理后台**: 新增 `/admin` 路由，使用 `requireSupabaseAuth` 中间件保护，展示所有申请数据表格
-2. **答案评分**: 对 26 道 MC 题自动评分，开放题人工评审
+1. ~~**管理后台**~~: 已实现 `/admin` + `/admin/login`（Session 保护、表格、CSV 导出）
+2. ~~**答案评分**~~: 已实现 — 26 道 MC 自动评分 + 4 道开放题人工评分（0–5），按四维权重计算总分与等级
 3. **邮件通知**: 入选/落选自动发送邮件通知（使用公司邮箱）
 4. **多语言支持**: 当前为全英文，可扩展中文版本
 5. **导出功能**: 管理后台支持 CSV 导出申请数据

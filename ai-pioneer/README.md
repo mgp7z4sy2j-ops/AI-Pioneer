@@ -9,6 +9,11 @@ npm install
 npm run dev
 ```
 
+Open **http://localhost:3050** (admin login: **http://localhost:3050/admin/login**).
+
+> If port 3050 is already in use, stop the other process or change the port in `package.json` (`dev` script).  
+> Do not use port 3000 unless you have stopped any other dev server on that port — another Vite app there will make `/admin/login` appear broken.
+
 # Building For Production
 
 To build this application for production:

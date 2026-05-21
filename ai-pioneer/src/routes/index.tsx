@@ -9,7 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { questions } from '@/data/questions'
 import { getCountdownParts, REGISTRATION_DEADLINE_ISO, type CountdownParts } from '@/lib/countdown'
 import { applicationSchema, personalInfoSchema } from '@/lib/schema'
-import { submitApplication } from '@/lib/supabase'
+import { submitApplication } from '@/server/applications'
 
 export const Route = createFileRoute('/')({
   component: LandingPage,
@@ -547,7 +547,7 @@ function ApplicationForm() {
     }
     setSubmitting(true)
     try {
-      await submitApplication(parsed.data)
+      await submitApplication({ data: parsed.data })
       setSubmitted(true)
     } catch {
       toast.error('Something went wrong. Please try again.')
