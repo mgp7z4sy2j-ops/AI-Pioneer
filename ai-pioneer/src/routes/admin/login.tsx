@@ -25,21 +25,23 @@ function AdminLoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
+    setError(null)
     try {
       const result = await adminLogin({ data: { email, password } })
       if (!result.ok) {
-        toast.error(result.error)
+        setError(result.error)
         return
       }
       toast.success('Signed in')
       await router.invalidate()
       await router.navigate({ to: redirectTo as '/admin' })
     } catch {
-      toast.error('Sign in failed. Please try again.')
+      setError('Sign in failed. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -55,6 +57,12 @@ function AdminLoginPage() {
             <h1 className="text-2xl font-black text-white">Admin Console</h1>
             <p className="text-mist/70 text-sm mt-2">STARTRADER AI Pioneer Program</p>
           </div>
+
+          {error && (
+            <p role="alert" className="rounded-lg bg-red-500/15 border border-red-500/30 px-4 py-3 text-sm text-red-300">
+              {error}
+            </p>
+          )}
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-2">

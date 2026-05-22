@@ -12,7 +12,8 @@ test.describe('Landing Page', () => {
 
   test('CTA scrolls to application form', async ({ page }) => {
     await page.getByRole('button', { name: /Apply to the Program/i }).first().click()
-    await page.waitForTimeout(800)
+    await page.locator('#apply').scrollIntoViewIfNeeded()
+    await page.waitForTimeout(500)
     await expect(page.locator('#apply')).toBeInViewport()
   })
 

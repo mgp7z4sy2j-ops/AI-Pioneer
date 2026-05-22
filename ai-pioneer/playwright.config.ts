@@ -2,9 +2,10 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './e2e',
+  workers: 1,
   use: {
     baseURL: 'http://localhost:3050',
-    headless: false,
+    headless: true,
     trace: 'on-first-retry',
   },
   projects: [

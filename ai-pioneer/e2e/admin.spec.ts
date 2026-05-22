@@ -11,7 +11,7 @@ test.describe('Admin Login', () => {
     await page.getByLabel('Email').fill('wrong@example.com')
     await page.getByLabel('Password').fill('wrongpassword')
     await page.getByRole('button', { name: /Sign in/i }).click()
-    await expect(page.getByRole('region', { name: /Notifications/i }).getByText('Invalid email or password')).toBeVisible()
+    await expect(page.getByRole('alert').getByText('Invalid email or password')).toBeVisible({ timeout: 8000 })
   })
 
   test('logs in with valid credentials', async ({ page }) => {
@@ -29,7 +29,7 @@ test.describe('Admin Dashboard', () => {
     await page.getByLabel('Email').fill('admin@startrader.com')
     await page.getByLabel('Password').fill('changeme')
     await page.getByRole('button', { name: /Sign in/i }).click()
-    await page.waitForURL(/\/admin/, { timeout: 15000 })
+    await page.waitForURL(/\/admin(?!\/login)/, { timeout: 15000 })
   })
 
   test('dashboard loads with applications table', async ({ page }) => {
